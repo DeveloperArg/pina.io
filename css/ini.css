@@ -1,0 +1,148 @@
+*{
+	color: white;
+	text-align: center;/*Centrando horizontal los elementos*/
+    margin: 0px;
+	padding: 0px;
+	font-family: 'arial', sans-serif;
+	vertical-align: middle;/*Centrando horizontal los elementos*/
+}
+
+body{
+	color: white;
+	background-color: black;
+	background-image: url('../img/backg.png');
+	
+
+}
+
+div#wrapper{
+	min-width: 350px;
+}
+
+img.logo{
+	/*position: absolute;/*Definiendo la posición del elemento
+	left: 0px;*/
+	width: 190px;
+	height: 190px;
+	margin: 20px 20px 0px 20px;
+	border: 1px solid white;
+	display: inline-block;
+	cursor: pointer;
+}
+
+img.iconos, img.iconosL{
+	width: 128px;
+	height: 128px;
+	position: relative;
+	top: 30%;
+}
+
+
+div.left{
+	width: 45%;
+	height: 400px;
+	border-right: 8px solid white;
+	display: inline-block;
+	/*vertical-align: middle;/*INDISPENSABLE para que ambos bloques queden verticalmente equiparados*/
+	margin-right: -3px;
+	margin-bottom: -4px;
+}
+
+div.right{
+	width: 45%;
+	height: 400px;
+	border-left: 8px solid white;
+    display: inline-block;	
+    /*vertical-align: middle;/*INDISPENSABLE para que ambos bloques queden verticalmente equiparados*/
+    margin-left: -3px;
+	margin-bottom: -4px;
+}
+
+
+img.pie{
+	width: 100%;
+	z-index: 10;
+}
+p{
+	margin: 20%;
+	font-family: 'Economica', sans-serif;
+	font-size: 20px;
+
+}
+
+p.nota{
+	margin: 5px;
+	text-align: center;
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+	margin: 10px;
+	font-size: 20px;
+
+
+}
+
+span{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold!important;
+	font-size: 48px;
+	vertical-align: middle;
+
+}
+div.redes img{
+	margin: 10px;
+	padding-bottom: 4px;
+	width: 30px;
+	height: 30px;
+	/*cursor: pointer;*/
+	border-bottom: 1px solid white;
+	
+}
+
+div.redes{
+	border-top: 1px solid white;
+	border-width: 1px;
+}
+
+
+
+/*Media-Querries*/
+/*Límite de visualización-Optimizado para 1024*768*/
+
+@media screen and (min-width: 1030px){
+	div#wrapper{
+		width: 1024px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width:600px){
+	div.left, div.right{
+		height: auto;
+		border: none;
+	}
+
+	img.iconos, img.iconosL{
+		width: 95px;
+		height: 95px;
+	}
+
+	p.d{
+		text-align: left;
+	}
+
+	p.i{
+		text-align: right;
+	}
+
+
+	img.logo{
+		width: 100px;
+		height: 100px;
+	}
+
+	div#wrapper{
+	margin: 0 auto;/*última definición, subir y ver renderizado (centrado ancho mínimo)*/
+}
+
+}
